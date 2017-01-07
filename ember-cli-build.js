@@ -9,6 +9,13 @@ module.exports = function(defaults) {
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
+  app.import('bower_components/photon/dist/css/photon.css');
+  app.import('bower_components/photon/dist/fonts/photon-entypo.ttf', {
+      destDir: 'fonts'
+  });
+  app.import('bower_components/photon/dist/fonts/photon-entypo.woff', {
+      destDir: 'fonts'
+  });
   //
   // If you need to use different assets in different
   // environments, specify an object as the first parameter. That
